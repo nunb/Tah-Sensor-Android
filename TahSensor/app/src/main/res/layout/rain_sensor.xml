@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="05dp"
+    android:background="@drawable/appbackground"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/imgbanana"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flurowhite"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Raining\n Stopped" />
+
+
+        </TableRow>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/pinsetting"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rainstoppedsmall" />
+
+    <ImageView
+        android:id="@+id/imgrainsmallone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:background="@drawable/rainsmall_one"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/rainsmalltwo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:background="@drawable/rainsmall_two"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/rainsmallthree"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:background="@drawable/rainsmall_three"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/framerain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/apppinbacground"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pinselectiontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Select Sensor Pin"
+                android:textColor="@color/apptextcolor" />
+
+            <HorizontalScrollView
+                android:id="@+id/pinscroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinselectiontxt"
+                android:layout_marginTop="05dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/sensorpinrdiogp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pinselectiontxt"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/pinA0"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A0"
+                        android:textColor="@color/apptextcolor" />
+
+                    <RadioButton
+                        android:id="@+id/pinA1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A1"
+                        android:textColor="@color/apptextcolor" />
+
+                    <RadioButton
+                        android:id="@+id/pinA2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A2"
+                        android:textColor="@color/apptextcolor" />
+
+                    <RadioButton
+                        android:id="@+id/pinA3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A3"
+                        android:textColor="@color/apptextcolor" />
+
+                    <RadioButton
+                        android:id="@+id/pinA4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A4"
+                        android:textColor="@color/apptextcolor" />
+
+                    <RadioButton
+                        android:id="@+id/pinA5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="A5"
+                        android:textColor="@color/apptextcolor" />
+
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+
+
+            <TextView
+                android:id="@+id/txtdistanceunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinscroll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="03dp"
+                android:text="Set Sensor Threshold Value"
+                android:textColor="@color/apptextcolor" />
+
+            <EditText
+                android:id="@+id/threshold"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtdistanceunit"
+                android:layout_centerHorizontal="true"
+                android:maxEms="4"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="0-1023" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/pinsetting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/set" />
+
+
+</RelativeLayout>

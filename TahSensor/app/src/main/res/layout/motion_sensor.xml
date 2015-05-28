@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="05dp"
+    android:background="@drawable/appbackground"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/imgbanana"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flurowhite"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="No \nMotion" />
+
+
+        </TableRow>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/pinsetting"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/motion" />
+
+    <FrameLayout
+        android:id="@+id/framemotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/apppinbacground"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pinselectiontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Select Sensor Pin"
+                android:textColor="@color/apptextcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Scroll Horizontal to select pin"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pinscroll"
+                android:textColor="#000000"
+                android:paddingBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:id="@+id/pinscroll"
+                android:scrollbars="none"
+                android:layout_marginTop="05dp"
+                android:layout_below="@+id/pinselectiontxt"
+                android:layout_height="wrap_content"
+                android:fillViewport="false">
+
+                <RadioGroup
+                    android:id="@+id/sensorpinrdiogp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:layout_below="@+id/pinselectiontxt"
+                    >
+
+
+                    <RadioButton
+                        android:id="@+id/pind2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:checked="true"
+                        android:text="D2" />
+
+                    <RadioButton
+                        android:id="@+id/pind3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:checked="false"
+                        android:text="D3" />
+
+                    <RadioButton
+                        android:id="@+id/pind4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:checked="false"
+                        android:text="D4" />
+
+                    <RadioButton
+                        android:id="@+id/pind5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:checked="false"
+                        android:text="D5" />
+
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="D6"
+                        android:id="@+id/pind6"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="D7"
+                        android:id="@+id/pind7"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="D8"
+                        android:id="@+id/pind8"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="D9"
+                        android:id="@+id/pind9"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="10"
+                        android:id="@+id/pin10"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="11"
+                        android:id="@+id/pin11"
+                        android:checked="false" />
+                    <RadioButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:textColor="@color/apptextcolor"
+                        android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                        android:gravity="center_horizontal|top"
+                        android:text="12"
+                        android:id="@+id/pin12"
+                        android:checked="false" />
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/pinsetting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/set" />
+
+</RelativeLayout>
